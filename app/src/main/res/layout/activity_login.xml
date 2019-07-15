@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    //투개더 로고
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/login_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/together_logo" />
+    </LinearLayout>
+
+
+
+    //이메일 입력
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_user"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_mail"
+                android:layout_width="290dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //비밀번호 입력
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="66dp"
+            android:layout_height="66dp">
+
+            <ImageView
+                android:id="@+id/password"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="260dp"
+                app:srcCompat="@drawable/ic_lock" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="290dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    //로그인, 페이스북로그인, 로그인 버튼
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="370dp"
+            android:layout_height="64dp"
+            android:background="@drawable/reg_btn_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/face_book_login"
+            android:layout_width="370dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/reg_btn_style2"
+            android:text="Login with Facebook"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="370dp"
+            android:layout_height="64dp"
+            android:background="@drawable/reg_btn_style3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/together_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</LinearLayout>

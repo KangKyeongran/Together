@@ -1,0 +1,162 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HotelListCardView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:id="@+id/total_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/hotel_itemlist_lay"
+        android:orientation="horizontal">
+
+
+        //호텔 이미지
+        <ImageView
+            android:id="@+id/drawableId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#fefc"
+            android:layout_weight="1" />
+        //호텔 이미지
+
+
+        //호텔 정보들 담는 Layout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/etp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="업체이름"
+                android:textSize="20dp"
+                android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:layout_weight="0.5"
+                    android:text="시간이 들어감" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/etp_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text="★ 4.4"
+                    android:textColor="@color/colorBlue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <!--<TextView-->
+                <!--android:id="@+id/etp_addr"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:textSize="12dp"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="업체 주소"/>-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_location"/>
+
+                <TextView
+                    android:id="@+id/dis_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:padding="0dp"
+                    android:gravity="left"
+                    android:text="· 228.2km 거리"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/etp_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="주소" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:text="예약가"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="1일 기준 최저가"
+                    android:textColor="@color/colorBlue"/>
+
+                <TextView
+                    android:id="@+id/product_firstPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="50,000원"
+                    android:textColor="@color/colorBlue"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        //호텔 정보들 담는 Layout
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
